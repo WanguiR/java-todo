@@ -11,7 +11,7 @@ pipeline{
       }
       steps{
         //clone the repository using the git method
-        git ID:GIT_ID  , git url:GIT_REPO_URL
+        git ID:GIT_ID  , git link:GIT_REPO_URL
       }
     stage('Build Project'){
       steps{
