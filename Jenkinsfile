@@ -8,10 +8,10 @@ pipeline{
        environment{
         GITHUB_REPO_URL = "https://github.com/WanguiR/java-todo.git"
         GITHUB_ID = "wanguiR"
-      }
+        }
       steps{
         //clone the repository using the git method
-        git ID :GITHUB_ID  , giturl : GITHUB_REPO_URL
+        git iD:GITHUB_ID  , URL:GITHUB_REPO_URL
       }
     stage('Build Project'){
       steps{
