@@ -9,8 +9,8 @@ pipeline{
         GIT_REPO_URL = "https://github.com/WanguiR/java-todo.git"
       }
       steps{
-        //clone the repository using the git method
-        url : GIT_REPO_URL
+          //clone the repository using the git method
+          url : GIT_REPO_URL
       }
     stage('Build Project'){
       steps{
