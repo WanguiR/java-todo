@@ -10,7 +10,7 @@ pipeline{
       }
       steps{
           //clone the repository using the git method
-          url : GIT_REPO_URL
+          url : 'GIT_REPO_URL'
       }
     stage('Build Project'){
       steps{
