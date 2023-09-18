@@ -10,13 +10,17 @@ pipeline{
     stage ('clone repository'){
       steps{
         //clone the repository using the git method
-        URL: GIT_REPO_URL
+        url : GIT_REPO_URL
       }
     stage('Build Project'){
-      sh 'gradle build'
+      steps{
+        sh 'gradle build'
+      }
     }
     stage('Run tests'){
-      sh 'gradle test'
+      steps{
+       sh 'gradle test'   
+      }
     }
     }
   }
