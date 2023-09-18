@@ -11,7 +11,7 @@ pipeline{
         }
       steps{
         //clone the repository using the git method
-        git iD:GITHUB_ID  , URL:GITHUB_REPO_URL
+        gitid: GITHUB_ID  , url: GITHUB_REPO_URL
       }
     stage('Build Project'){
       steps{
