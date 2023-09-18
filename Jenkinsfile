@@ -4,7 +4,7 @@ pipeline{
     gradle "Gradle 8.3"
   }
   stages{
-    stage ('clone repository'){
+    stage ("clone repository"){
        environment{
         GITHUB_REPO_URL = "https://github.com/WanguiR/java-todo.git"
         GITHUB_ID = "wanguiR"
