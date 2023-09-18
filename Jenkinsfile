@@ -3,11 +3,11 @@ pipeline{
   tools {
     gradle "Gradle 8.3"
   }
-  environment{
-    GIT_REPO_URL = "https://github.com/WanguiR/java-todo.git"
-  }
   stages{
     stage ('clone repository'){
+       environment{
+        GIT_REPO_URL = "https://github.com/WanguiR/java-todo.git"
+      }
       steps{
         //clone the repository using the git method
         url : GIT_REPO_URL
